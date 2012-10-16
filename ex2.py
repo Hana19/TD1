@@ -3,12 +3,15 @@ import httplib
 import sys
 import pdb
 LOG = False
+
 if len(sys.argv) > 2:
     LOG = True
+
 def logger(fichier, message):
     """ fonction logger"""
     if LOG : 
-        fichier.write (message) 
+        fichier.write (message)
+
 def fonction1():
     """fonction principale"""
     pdb.set_trace()
